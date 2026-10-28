@@ -1,5 +1,6 @@
 ---
 import { site } from "../lib/site";
+import { withBase } from "../lib/paths";
 import IconAlt from "./Icon.astro";
 import { Icon } from "astro-icon/components";
 // The link for the current page is white, the rest sit at 60% (Framer current-page link style).
@@ -8,13 +9,13 @@ interface Props {
   path: string;
 }
 const { path } = Astro.props;
-const isCurrent = (href: string) => href === path;
+const isCurrent = (href: string) => href === withBase(path);
 ---
 
 <header class="topbar" data-topbar>
   <div class="topbar-bar container">
     <div class="topbar-logo">
-      <a href="/" class="body" style="color: var(--white)"
+      <a href={withBase("/")} class="body" style="color: var(--white)"
         ><Icon name="BoostOxygenEC-flag-print-03" class="Logo-header" /></a
       >
     </div>

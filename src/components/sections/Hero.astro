@@ -1,5 +1,6 @@
 ---
 import { getProjects, site } from "../../lib/site";
+import { withBase } from "../../lib/paths";
 import Icon from "../Icon.astro";
 
 // Slides come from the projects collection (heroImage / title / category).
@@ -9,7 +10,7 @@ const slides = projects.map((p) => ({
   alt: p.data.heroAlt,
   category: p.data.category,
   title: p.data.title,
-  link: `/projects/${p.id}`,
+  link: withBase(`/projects/${p.id}`),
 }));
 const n = slides.length;
 ---

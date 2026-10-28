@@ -1,4 +1,6 @@
 ---
+import { withBase } from "../../lib/paths";
+
 interface ButtonConfig {
   text: string;
   href: string;
@@ -23,10 +25,10 @@ const {
   <h2 class="h2 balance cta-one-title">{title}</h2>
   <p class="body balance cta-one-text">{description}</p>
   <div class="cta-one-actions">
-    <a class="body-sb cta-one-primary" href={primaryButton.href}>{primaryButton.text}</a>
+    <a class="body-sb cta-one-primary" href={withBase(primaryButton.href)}>{primaryButton.text}</a>
     {
       secondaryButton && (
-        <a class="body-sb cta-one-secondary" href={secondaryButton.href}>
+        <a class="body-sb cta-one-secondary" href={withBase(secondaryButton.href)}>
           {secondaryButton.text}
           <svg
             class="cta-one-arrow"

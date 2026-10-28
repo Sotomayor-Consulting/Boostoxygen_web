@@ -1,5 +1,6 @@
 ---
 import { site } from "../../lib/site";
+import { withBase } from "../../lib/paths";
 import ScrollWords from "../ScrollWords.astro";
 import Icon from "../Icon.astro";
 
@@ -19,7 +20,7 @@ const mailto = `mailto:${site.email}?subject=${encodeURIComponent("Distribución
         <p class="body balance contact-text">{contact.text}</p>
       </div>
       <div class="contact-card">
-        <div class="contact-avatar"><img src="/assets/avatar.webp" alt={site.name} loading="lazy" /></div>
+        <div class="contact-avatar"><img src={withBase("/assets/avatar.webp")} alt={site.name} loading="lazy" /></div>
         <div>
           <p class="caption">Ventas y distribución</p>
           <a class="body" href={site.phone.href}>{site.phone.label}</a>
