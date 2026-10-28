@@ -1,0 +1,50 @@
+---
+interface ButtonConfig {
+  text: string;
+  href: string;
+}
+
+interface Props {
+  title?: string;
+  description?: string;
+  primaryButton?: ButtonConfig;
+  secondaryButton?: ButtonConfig;
+}
+
+const {
+  title = "¿Listo para respirar mejor?",
+  description = "Oxígeno suplementario al 95%, portátil y listo para usar. Coordinamos tu pedido por WhatsApp con envío a todo Ecuador.",
+  primaryButton = { text: "Pedir por WhatsApp", href: "https://wa.me/593994379961" },
+  secondaryButton,
+} = Astro.props;
+---
+
+<section class="cta-one">
+  <h2 class="h2 balance cta-one-title">{title}</h2>
+  <p class="body balance cta-one-text">{description}</p>
+  <div class="cta-one-actions">
+    <a class="body-sb cta-one-primary" href={primaryButton.href}>{primaryButton.text}</a>
+    {
+      secondaryButton && (
+        <a class="body-sb cta-one-secondary" href={secondaryButton.href}>
+          {secondaryButton.text}
+          <svg
+            class="cta-one-arrow"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+      )
+    }
+  </div>
+</section>

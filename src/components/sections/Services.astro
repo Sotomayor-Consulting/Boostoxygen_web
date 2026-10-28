@@ -1,0 +1,29 @@
+---
+import { site } from "../../lib/site";
+const services = site.services;
+---
+
+<section class="services container">
+  <div id="servicesScroll">
+    <div class="servicios">
+      <div class="services-top">
+        <p class="body">MOMENTOS DE USO</p>
+      </div>
+      {services.map((s) => (
+        <div class="services-middle">
+          <div class="services-names">
+            <h2 class="h2 balance services-name">{s.name}</h2>
+          </div>
+          <div class="services-detail">
+            <div class="services-image">
+              <img src={s.image} alt={s.alt} loading="lazy" />
+            </div>
+            <div class="services-captions">
+              {s.captions.map((c) => <p class="body">{c}</p>)}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

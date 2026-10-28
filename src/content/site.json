@@ -1,0 +1,220 @@
+{
+  "name": "Boost Oxygen Ecuador",
+  "role": "Oxígeno suplementario portátil",
+  "tagline": "Oxígeno suplementario al 95% en un formato portátil, ligero y listo para usar. Apoyo recreativo para la altura, el deporte y el cansancio diario.",
+  "email": "info@boostoxygenecuador.com",
+  "phone": { "label": "+593 99 437 9961", "href": "tel:+593994379961" },
+  "year": "2026",
+  "nav": [
+    { "label": "Inicio", "href": "/" },
+    { "label": "Producto", "href": "/#work" },
+    { "label": "Nosotros", "href": "/#about-alt" },
+    { "label": "Contáctanos", "href": "/#contact" }
+  ],
+  "footerNav": [
+    { "label": "Producto", "href": "/#work" },
+    { "label": "Nosotros", "href": "/#about-alt" },
+    { "label": "Contáctanos", "href": "/#contact" }
+  ],
+  "socials": [
+    { "label": "WhatsApp", "href": "https://wa.me/593994379961" },
+    { "label": "Correo", "href": "mailto:info@boostoxygenecuador.com" }
+  ],
+  "about": {
+    "statement": "Oxígeno suplementario al 95% para acompañarte donde la altura, el deporte o el día a día te exigen más",
+    "bio": "Boost Oxygen Ecuador trae al país el oxígeno suplementario portátil de Boost Oxygen: latas de 9 litros con 95% de oxígeno, sin aromas añadidos en la versión Natural. Sin recetas, sin instalaciones y sin equipos pesados — listas para la altura, el entrenamiento, el viaje o la mochila. Pedidos directos por WhatsApp y envío coordinado a todo Ecuador.",
+    "contactLead": "Para pedidos o consultas escríbenos a",
+    "contactTail": "y te ayudamos a elegir el formato ideal."
+  },
+  "awards": [
+    {
+      "project": "NATURAL 9 LITROS",
+      "award": "95% OXÍGENO · SIN AROMA",
+      "year": "2026",
+      "cover": "/assets/award-fauna.webp",
+      "alt": "Lata de Boost Oxygen Natural 9 Litros"
+    },
+    {
+      "project": "ALTURA Y VIAJES",
+      "award": "APOYO CONTRA EL SOROCHE",
+      "year": "2026",
+      "cover": "/assets/award-pace.webp",
+      "alt": "Uso de Boost Oxygen en zonas elevadas"
+    },
+    {
+      "project": "DEPORTE",
+      "award": "RECUPERACIÓN DESPUÉS DEL ESFUERZO",
+      "year": "2026",
+      "cover": "/assets/award-lumen.webp",
+      "alt": "Recuperación con oxígeno después del entrenamiento"
+    },
+    {
+      "project": "MOCHILA Y AUTO",
+      "award": "FORMATO PORTÁTIL Y LIGERO",
+      "year": "2026",
+      "cover": "/assets/award-nova.webp",
+      "alt": "Lata portátil de Boost Oxygen"
+    },
+    {
+      "project": "SIN RECETA",
+      "award": "USO RECREATIVO",
+      "year": "2026",
+      "cover": "/assets/award-halo.webp",
+      "alt": "Etiqueta de uso recreativo de Boost Oxygen"
+    },
+    {
+      "project": "ENVÍO NACIONAL",
+      "award": "GRATIS DESDE $60",
+      "year": "2026",
+      "cover": "/assets/award-orbit.webp",
+      "alt": "Envío de Boost Oxygen a todo Ecuador"
+    },
+    {
+      "project": "ATENCIÓN OFICIAL",
+      "award": "COMPRA POR WHATSAPP",
+      "year": "2026",
+      "cover": "/assets/award-various.webp",
+      "alt": "Atención al cliente por WhatsApp"
+    }
+  ],
+  "principles": [
+    {
+      "title": "95% de oxígeno puro",
+      "description": "Cada lata entrega oxígeno suplementario al 95%, sin aromas ni fragancias añadidas en la versión Natural.",
+      "icon": "HealthiconsOxygenTankOutline",
+      "image": "/assets/How_to_USE_2.avif",
+      "alt": "Boost oxigen usada por deportista de elite"
+    },
+    {
+      "title": "Portátil y listo para usar",
+      "description": "9 litros en un formato ligero que cabe en la mochila, el auto o la guantera. Sin instalaciones ni equipos pesados.",
+      "icon": "MaterialSymbolsLightPersonalBagOutline",
+      "image": "/assets/boost-portatil.avif",
+      "alt": "Boost Oxygen en una mochila de viaje"
+    },
+    {
+      "title": "Uso recreativo, sin receta",
+      "description": "No es oxígeno medicinal ni un fármaco. Es un apoyo para el bienestar diario; si tienes una condición previa, consulta a tu médico.",
+      "icon": "MaterialSymbolsGfitHealthOutline",
+      "image": "/assets/FlagB.avif",
+      "alt": "Chicas despues de una carrera con una bandera de boost oxigen"
+    },
+    {
+      "title": "Compra directa y envío nacional",
+      "description": "Atención oficial por WhatsApp, guía de pago segura y entrega coordinada a tu ciudad en Ecuador.",
+      "icon": "SolarDeliveryOutline",
+      "image": "/assets/Boost_Oxygent_para_entregar.avif",
+      "alt": "Pedido de Boost Oxygen coordinado por WhatsApp"
+    }
+  ],
+  "ticker": "explorerEc",
+  "services": [
+    {
+      "name": "Altura y viajes",
+      "image": "/assets/Campain360marketingBoost_web_hero.avif",
+      "alt": "Caminata en zonas elevadas",
+      "captions": ["Soroche", "Trekking", "Zonas elevadas"]
+    },
+    {
+      "name": "Deporte y rendimiento",
+      "image": "/assets/FlagA.avif",
+      "alt": "Corredores entrenando",
+      "captions": ["Recuperación", "Entrenamientos", "Competencias"]
+    },
+    {
+      "name": "Casa, auto y mochila",
+      "image": "/assets/boost-portatil.avif",
+      "alt": "Boost Oxygen en una mochila",
+      "captions": ["Formato ligero", "Sin instalación", "Siempre a mano"]
+    },
+    {
+      "name": "Estudio y trabajo",
+      "image": "/assets/How_to_USE_1.avif",
+      "alt": "Persona trabajando frente a una pantalla",
+      "captions": ["Fatiga mental", "Sensación de frescura", "Pausas activas"]
+    }
+  ],
+  "gallery": {
+    "heading": "Oxígeno para cada momento — ",
+    "headingMuted": "altura, deporte y día a día",
+    "images": [
+      { "src": "/assets/Campain360marketingBoost_web_hero.avif", "alt": "Boost Oxygen Natural 9 Litros" },
+      {
+        "src": "/assets/boost-portatil.avif",
+        "alt": "Oxígeno suplementario portátil al 95%"
+      },
+      { "src": "/assets/Boost_Oxygent_para_entregar.avif", "alt": "Boost Oxygen listo para usar" },
+      { "src": "/assets/FlagA.avif", "alt": "Boost Oxygen en el trabajo" },
+      { "src": "/assets/FlagB.avif", "alt": "Boost Oxygen en la montaña" },
+      { "src": "/assets/How_to_USE_1.avif", "alt": "Boost Oxygen en la mochila" },
+      { "src": "/assets/How_to_USE_2.avif", "alt": "Boost Oxygen en casa" },
+      {
+        "src": "/assets/How_to_USE_3.avif",
+        "alt": "Boost Oxygen después del deporte"
+      },
+      {
+        "src": "/assets/How_to_USE_4.avif",
+        "alt": "Boost Oxygen Natural 9 Litros en uso"
+      },
+      {
+        "src": "/assets/deporte_booost_1.avif",
+        "alt": "Formato portátil de Boost Oxygen"
+      },
+      { "src": "/assets/sports_performance_top_level_image_desktop_v3.avif", "alt": "Boost Oxygen para viajes" },
+      {
+        "src": "/assets/boost-oxygen_360_chica.avif",
+        "alt": "Boost Oxygen para el día a día"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "q": "¿Es oxígeno medicinal?",
+      "a": "No. Boost Oxygen es oxígeno suplementario de uso recreativo. No es oxígeno de grado médico, no es un fármaco y no reemplaza tratamientos ni equipos médicos prescritos."
+    },
+    {
+      "q": "¿Necesito receta médica para comprarlo?",
+      "a": "No. No se requiere receta médica para su adquisición. Sin embargo, si posees alguna condición de salud previa, se recomienda consultar a tu médico antes de usarlo."
+    },
+    {
+      "q": "¿Cuánto dura el formato de 9 litros?",
+      "a": "La duración exacta depende de la frecuencia con la que se active la boquilla y de la duración de cada inhalación. Por eso el rendimiento es variable según la intensidad de uso."
+    },
+    {
+      "q": "¿Cómo se realiza la compra?",
+      "a": "La compra se realiza directamente por WhatsApp con atención personalizada. Ahí recibes la guía de pago segura y se coordina el envío directo hasta tu ciudad en Ecuador."
+    },
+    {
+      "q": "¿Cuánto cuesta y cómo se paga?",
+      "a": "El precio promocional es de $34.50 USD con impuestos incluidos (precio regular $46.00 USD). El pago se coordina por WhatsApp con la guía de pago segura."
+    },
+    {
+      "q": "¿Hacen envíos a todo Ecuador?",
+      "a": "Sí. Coordinamos envíos a nivel nacional y el envío es gratis en compras de $60 o más."
+    }
+  ],
+  "contact": {
+    "heading": "¿Quieres distribuir Boost Oxygen en tu ciudad?",
+    "label": "VENTAS MAYORISTAS · B2B",
+    "text": "Trabajamos con distribuidores, farmacias, tiendas deportivas, gimnasios y operadores turísticos en todo Ecuador. Precios por volumen, material de venta y soporte directo del importador.",
+    "panelTitle": "Únete a la red de distribución",
+    "points": [
+      "Precios mayoristas por volumen y compra mínima",
+      "Producto con demanda en turismo, deporte y bienestar",
+      "Material de venta y contenido listo para tu canal",
+      "Envíos coordinados a todo Ecuador"
+    ],
+    "primaryLabel": "Hablar con ventas",
+    "secondaryLabel": "Saber mas de boost",
+    "note": "Respuesta en menos de 24 h · Envío a todo Ecuador"
+  },
+  "ring": [
+    "/assets/ring-1.webp",
+    "/assets/ring-2.webp",
+    "/assets/ring-3.webp",
+    "/assets/ring-4.webp",
+    "/assets/ring-5.webp",
+    "/assets/ring-6.webp",
+    "/assets/ring-7.webp"
+  ]
+}

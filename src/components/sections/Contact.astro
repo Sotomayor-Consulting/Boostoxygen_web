@@ -1,0 +1,51 @@
+---
+import { site } from "../../lib/site";
+import ScrollWords from "../ScrollWords.astro";
+import Icon from "../Icon.astro";
+
+const { contact } = site;
+const phone = site.phone.href.replace(/\D/g, "");
+const whatsappMessage = "Hola, quiero distribuir Boost Oxygen en Ecuador. ¿Me comparten la lista de precios mayoristas y la compra mínima?";
+const whatsapp = `https://wa.me/${phone}?text=${encodeURIComponent(whatsappMessage)}`;
+const mailto = `mailto:${site.email}?subject=${encodeURIComponent("Distribución Boost Oxygen Ecuador")}`;
+---
+
+<section id="contact" class="contact container">
+  <div class="contact-main">
+    <div class="contact-left">
+      <div class="contact-head">
+        <p class="body-sb contact-label">{contact.label}</p>
+        <ScrollWords as="h2" class="h2 balance" text={contact.heading} />
+        <p class="body balance contact-text">{contact.text}</p>
+      </div>
+      <div class="contact-card">
+        <div class="contact-avatar"><img src="/assets/avatar.webp" alt={site.name} loading="lazy" /></div>
+        <div>
+          <p class="caption">Ventas y distribución</p>
+          <a class="body" href={site.phone.href}>{site.phone.label}</a>
+        </div>
+      </div>
+    </div>
+    <div class="contact-right">
+      <div class="contact-panel">
+        <p class="body-sb contact-panel-title">{contact.panelTitle}</p>
+        <ul class="contact-points">
+          {contact.points.map((point) => (
+            <li class="contact-point">
+              <Icon name="check" size={18} />
+              <span class="body">{point}</span>
+            </li>
+          ))}
+        </ul>
+        <div class="contact-actions">
+          <a class="body-sb contact-wa" href={whatsapp} target="_blank" rel="noreferrer">
+            {contact.primaryLabel}
+            <Icon name="arrow-up-right" size={20} stroke={2} />
+          </a>
+          <a class="body-sb contact-mail" href={mailto}>{contact.secondaryLabel}</a>
+        </div>
+        <p class="caption contact-note">{contact.note}</p>
+      </div>
+    </div>
+  </div>
+</section>

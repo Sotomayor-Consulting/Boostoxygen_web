@@ -1,0 +1,26 @@
+---
+import { Icon } from "astro-icon/components";
+
+// Icon marquee: the product icons, repeated enough to overflow any viewport.
+// The track holds two identical halves so the -50% keyframe loops seamlessly.
+const icons = [
+  "explorerEc",
+  "shark-tank",
+];
+const repeats = 7;
+---
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track" style="animation-duration: 48s" data-ticker>
+    {[0, 1].map(() => (
+      <div class="ticker-group">
+        {Array.from({ length: repeats }).map(() =>
+          icons.map((name) => (
+            <span class="ticker-icon">
+              <Icon name={name} />
+            </span>
+          ))
+        )}
+      </div>
+    ))}
+  </div>
+</div>

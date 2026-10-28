@@ -1,0 +1,29 @@
+---
+import { site } from "../../lib/site";
+
+const FADE =
+  "linear-gradient(180deg,rgba(4, 50, 89, 1) 0%, rgba(79, 157, 181, 1) 100%);";
+---
+<footer class="footer">
+  <!-- <div class="footer-shader" aria-hidden="true"><canvas data-shader></canvas></div> -->
+  <div class="footer-fade" aria-hidden="true" style={`background: ${FADE}`}></div>
+  <div class="footer-top container">
+    <div class="footer-email">
+      <a class="body" href={`mailto:${site.email}`}>{site.email}</a>
+      <div class="footer-available">
+        <span class="footer-dot" aria-hidden="true"></span>
+        <p class="body">Envío a todo Ecuador</p>
+      </div>
+    </div>
+    <div class="footer-col footer-social">
+      {site.socials.map((s) => <a class="body" href={s.href} target="_blank" rel="noreferrer">{s.label}</a>)}
+    </div>
+    <nav class="footer-col footer-nav" aria-label="Footer">
+      {site.footerNav.map((l) => <a class="body" href={l.href}>{l.label}</a>)}
+    </nav>
+  </div>
+  
+  <div class="footer-bottom container">
+    <p class="caption"><span class="muted">© {site.year} {site.name}. All rights reserved.</span></p>
+  </div>
+</footer>
