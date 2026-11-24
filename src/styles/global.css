@@ -448,6 +448,9 @@ button {
 }
 
 .about-stage {
+  --about-blur: 0px;
+  --about-image-opacity: 1;
+  --about-shade: 0;
   position: relative;
   width: 100%;
   height: 900px;
@@ -478,13 +481,19 @@ button {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: blur(var(--about-blur));
+  opacity: var(--about-image-opacity);
+  will-change: filter, opacity;
 }
 
 .about-scrim {
   position: absolute;
   inset: 0;
   z-index: 1;
-  background: linear-gradient(180deg, rgba(18, 18, 18, 0.55) 0%, rgba(18, 18, 18, 0.12) 42%, rgba(18, 18, 18, 0.78) 100%);
+  background:
+    linear-gradient(rgba(18, 18, 18, var(--about-shade)), rgba(18, 18, 18, var(--about-shade))),
+    linear-gradient(180deg, rgba(18, 18, 18, 0.55) 0%, rgba(18, 18, 18, 0.12) 42%, rgba(18, 18, 18, 0.78) 100%);
+  pointer-events: none;
 }
 
 .about-content {
@@ -548,6 +557,12 @@ button {
   .about-media {
     top: -170px;
     height: 1060px;
+  }
+
+  .about-scrim {
+    background:
+      linear-gradient(rgba(18, 18, 18, var(--about-shade)), rgba(18, 18, 18, var(--about-shade))),
+      linear-gradient(180deg, rgba(18, 18, 18, 0.72) 0%, rgba(18, 18, 18, 0.42) 42%, rgba(18, 18, 18, 0.88) 100%);
   }
 
   .about-content {
