@@ -318,6 +318,47 @@ button {
   gap: 10px;
 }
 
+.hero-single {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  min-height: 620px;
+  max-height: 1080px;
+  overflow: hidden;
+  background: var(--black);
+}
+
+.hero-single-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.hero-single-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(180deg, rgba(18, 18, 18, 0.28) 0%, rgba(18, 18, 18, 0.08) 38%, rgba(18, 18, 18, 0.52) 100%),
+    linear-gradient(90deg, rgba(18, 18, 18, 0.18), transparent 35%, transparent 65%, rgba(18, 18, 18, 0.18));
+}
+
+.hero-single-content {
+  z-index: 2;
+}
+
+.hero-carousel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
 .hero-bottom {
   position: sticky;
   bottom: 0;
@@ -336,6 +377,10 @@ button {
 }
 
 @media (max-width: 809px) {
+  .hero-single {
+    min-height: 560px;
+  }
+
   .hero-heading {
     width: 100%;
   }
