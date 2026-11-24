@@ -919,7 +919,7 @@ button {
 /* ---------- Gallery ---------- */
 .gallery {
   position: relative;
-  height: 200vh;
+  height: 150vh;
   background: var(--black);
 }
 
