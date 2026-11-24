@@ -9,10 +9,11 @@ interface Props {
   path: string;
 }
 const { path } = Astro.props;
+const overlaysHero = path === "/";
 const isCurrent = (href: string) => href === withBase(path);
 ---
 
-<header class="topbar" data-topbar>
+<header class:list={["topbar", { "topbar-overlay": overlaysHero }]} data-topbar>
   <div class="topbar-bar container">
     <div class="topbar-logo">
       <a href={withBase("/")} class="body" style="color: var(--white)"
