@@ -1937,7 +1937,13 @@ textarea.input {
   height: 640px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: radial-gradient(circle, #043259 34%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    #043259 0%,
+    #043259 28%,
+    #4f9db5 72%,
+    #4f9db5 100%
+  );
   z-index: 500;
   pointer-events: none;
 }
